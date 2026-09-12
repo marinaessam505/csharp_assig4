@@ -72,25 +72,44 @@
             // with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to
             // see, and why?
 
-            double[] prices = { 25.5, 40.0 };
+            //double[] prices = { 25.5, 40.0 };
 
-            ApplyDiscount(prices);
+            //ApplyDiscount(prices);
 
-            Console.WriteLine(prices[0]); // Output: 20.5
+            //Console.WriteLine(prices[0]); // Output: 20.5
 
-            static void ApplyDiscount(double[] prices)
-            {
-                prices[0] = prices[0] - 5;
-            }
+            //static void ApplyDiscount(double[] prices)
+            //{
+            //    prices[0] = prices[0] - 5;
+            //}
 
             #endregion
 
 
+            #region Question 6
+
+            // Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            // int pages = 400; and print pages afterward. What do you expect to see, and why?
+
+            int pages = 400;
+
+            AddBonusPages(pages);
+
+            Console.WriteLine(pages);
+
+            static void AddBonusPages(int pages)
+            {
+                pages = pages + 50;
+            }
+
+            #endregion
+        
 
 
 
 
-        }
+
+    }
     }
 
 
