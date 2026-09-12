@@ -30,7 +30,6 @@
             #endregion
 
 
-
             #region Question Three
 
             // 3-Write a method called PrintWelcomeMessage that takes no parameters and prints
@@ -49,28 +48,80 @@
             #endregion
 
 
-
-
             #region Question Four
 
             // 4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
             // "Clean Code".
 
-            static void PrintBookTitle(string title)
-            {
-                Console.WriteLine("Book title: " + title);
-            }
+            //static void PrintBookTitle(string title)
+            //{
+            //   Console.WriteLine("Book title: " + title);
+            //}
 
-            
-           
-                PrintBookTitle("Clean Code");
-            
+
+
+            //  PrintBookTitle("Clean Code");
+
+
+            #endregion
+
+
+            #region Question 5
+
+            //  Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            // with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to
+            // see, and why?
+
+            double[] prices = { 25.5, 40.0 };
+
+            ApplyDiscount(prices);
+
+            Console.WriteLine(prices[0]); // Output: 20.5
+
+            static void ApplyDiscount(double[] prices)
+            {
+                prices[0] = prices[0] - 5;
+            }
 
             #endregion
 
 
 
 
+
+
         }
     }
+
+
+
+    
+    
+       
+        
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
