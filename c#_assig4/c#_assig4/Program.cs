@@ -91,20 +91,38 @@
             // Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
             // int pages = 400; and print pages afterward. What do you expect to see, and why?
 
+            //int pages = 400;
+
+            //AddBonusPages(pages);
+
+            //Console.WriteLine(pages);
+
+            //static void AddBonusPages(int pages)
+            //{
+            //    pages = pages + 50;
+            //}
+
+            #endregion
+
+
+            #region Question Seven
+
+            // 7-Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            // Call it and print pages afterward. How is the result different from question 5?
+
             int pages = 400;
 
-            AddBonusPages(pages);
+            AddBonusPagesByRef(ref pages);
 
             Console.WriteLine(pages);
 
-            static void AddBonusPages(int pages)
+            static void AddBonusPagesByRef(ref int pages)
             {
                 pages = pages + 50;
             }
 
             #endregion
         
-
 
 
 
