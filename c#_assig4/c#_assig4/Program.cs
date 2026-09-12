@@ -36,18 +36,37 @@
             // 3-Write a method called PrintWelcomeMessage that takes no parameters and prints
             // "Welcome to the Library!". Call it from Main.
 
-            static void PrintWelcomeMessage()
-            {
-                Console.WriteLine("Welcome to the Library!");
-            }
+            //static void PrintWelcomeMessage()
+            //{
+            //    Console.WriteLine("Welcome to the Library!");
+            //}
 
-            
-            
-                PrintWelcomeMessage();
-            
+
+
+            //    PrintWelcomeMessage();
+
 
             #endregion
 
+
+
+
+            #region Question Four
+
+            // 4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+            // "Clean Code".
+
+            static void PrintBookTitle(string title)
+            {
+                Console.WriteLine("Book title: " + title);
+            }
+
+            
+           
+                PrintBookTitle("Clean Code");
+            
+
+            #endregion
 
 
 
