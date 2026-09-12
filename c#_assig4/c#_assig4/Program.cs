@@ -1,4 +1,7 @@
-﻿namespace c__assig4
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace c__assig4
 {
     internal class Program
     {
@@ -110,24 +113,57 @@
             // 7-Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
             // Call it and print pages afterward. How is the result different from question 5?
 
-            int pages = 400;
+            //int pages = 400;
 
-            AddBonusPagesByRef(ref pages);
+            //AddBonusPagesByRef(ref pages);
 
-            Console.WriteLine(pages);
+            //Console.WriteLine(pages);
 
-            static void AddBonusPagesByRef(ref int pages)
+            //static void AddBonusPagesByRef(ref int pages)
+            //{
+            //    pages = pages + 50;
+            //}
+
+            #endregion
+
+
+
+            #region Question 8
+
+            // 1-Write a method bool TryGetPrice(string title, out double price) that returns
+            // true and sets price to 25.5 if title is "Clean Code", otherwise returns false and
+            // sets price to 0. Call it and print the price if found.
+
+            string title = "Clean Code";
+
+            if (TryGetPrice(title, out double price))
             {
-                pages = pages + 50;
+                Console.WriteLine(price);
+            }
+
+            static bool TryGetPrice(string title, out double price)
+            {
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+                else
+                {
+                    price = 0;
+                    return false;
+                }
             }
 
             #endregion
-        
 
 
 
 
-    }
+
+
+
+        }
     }
 
 
